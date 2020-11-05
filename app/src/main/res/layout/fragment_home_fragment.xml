@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Home_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar1"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:titleTextColor="@color/black">
+
+
+                <ImageButton
+                    android:id="@+id/btn_changeaddress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/blue"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/mylocation"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/locate"
+                    android:textColor="@color/black" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Restaurant"
+                    android:layout_width="320dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:completionThreshold="1"
+                    android:drawableStart="@drawable/places_ic_search"
+                    android:hint="Search products"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:popupBackground="@color/white"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_gray" />
+
+                <ImageButton
+                    android:id="@+id/btn_search_restro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/search_Restaurant"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginLeft="391dp"
+                    android:layout_marginTop="11sp"
+                    android:layout_marginEnd="45dp"
+                    android:text="clear"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="352dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11sp"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:titleTextColor="@color/black"></androidx.appcompat.widget.Toolbar>
+        <!-- TODO: Update blank fragment layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Search_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Change Location"
+                    android:padding="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lat"
+                    android:layout_width="195dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="11sp"
+                    android:text="lat"
+                    android:visibility="gone" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/fish_nutri_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@color/white"
+                        android:src="@drawable/btn_nutrition" />
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:src="@drawable/btn_sustainable" />
+                    <com.smarteist.autoimageslider.SliderLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/imageSlider"
+                        android:layout_marginTop="2dp"
+                        android:padding="11dp"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dimen_60dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

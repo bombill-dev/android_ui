@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Payumoney style -->
+    <style name="AppTheme.PayUMoney" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/persian_green_primary</item>
+        <item name="colorPrimaryDark">@color/persian_green_dark</item>
+        <item name="colorAccent">@color/persian_green_accent</item>
+        <item name="colorButtonNormal">@color/persian_green_primary</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- Alert doalog box theme -->
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:titleTextColor">@color/colorAccent</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorButtonNormal">@color/primary</item>
+    </style>
+
+
+
+
+    <style name="ThemeRadioButton" parent="Theme.AppCompat.Light" />
+    <style name="AppTheme.default" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_Default</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton.Default">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogStyle_Default" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:titleTextColor">@color/colorAccent</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+
+
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:background">@drawable/bg_rounded_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/indigo</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/pink</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey</item>
+    </style>
+
+
+    <color name="persian_grey_primary">#616161</color>
+    <color name="persian_grey_dark">#424242</color>
+    <color name="persian_grey_accent">#9e9e9e</color>
+</resources>

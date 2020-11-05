@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bombill_background"
+    tools:context=".Activities.Manage_Profile">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bombill" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutProductImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName"
+            android:hint="Full Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etName"
+            android:layout_alignTop="@id/etName"
+            android:text="Full Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/etName"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/etName"
+            android:background="@drawable/camera"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etEmail"
+            android:layout_alignTop="@id/etEmail"
+            android:text="Email Id"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:hint="Phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etPhone"
+            android:layout_alignTop="@id/etPhone"
+            android:text="Phone Number"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAddress"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etAddress"
+            android:layout_alignTop="@id/etAddress"
+            android:text="Address"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/etPassword"
+            android:layout_alignTop="@id/etPassword"
+            android:text="Password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="240sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/text_white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

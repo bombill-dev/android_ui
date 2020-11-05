@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Vendor_Product_Detail">
+
+    <ImageView
+        android:id="@+id/ivProductPhoto"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/bombill"
+        android:background="@color/blue1"/>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name of the Product"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ivProductPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ivProductPhoto" />
+
+    <LinearLayout
+        android:id="@+id/ratingBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintStart_toStartOf="@+id/ivProductPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName">
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Rating"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:tooltipText="Rating" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPricePerUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="₹500/500gm"
+        android:textSize="@dimen/dimen_18dp"
+        app:layout_constraintStart_toStartOf="@+id/ivProductPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarLayout"/>
+
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="Only 5 left in stock"
+        android:textSize="@dimen/dimen_18dp"
+        app:layout_constraintStart_toStartOf="@+id/ivProductPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvPricePerUnit"/>
+
+    <TextView
+        android:id="@+id/tvProductDescription"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="#DADADC"
+        android:text="Product Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInventory" />
+<?ignore
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button2"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/common_full_open_on_phone"
+        android:text="❤"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+    ?>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

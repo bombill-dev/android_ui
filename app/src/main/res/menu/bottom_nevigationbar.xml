@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Bombill"
+        android:id="@+id/navi_home"
+        android:icon="@drawable/bombill_logo"/>
+    <item android:title="Order"
+        android:id="@+id/navi_yourorder"
+        android:icon="@drawable/shopping_bag"/>
+    <item android:title="Account"
+        android:id="@+id/navi_account"
+        android:icon="@drawable/ic_user"/>
+    <item android:title="Cart"
+        android:id="@+id/navi_order"
+        android:icon="@drawable/shopping_cart_svg"/>
+
+
+
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Blue #0083CC Red #E04444 0A68CD df4344-->
+    <color name="colorPrimary">#0083CC</color>
+    <color name="colorPrimaryDark">#0752A3</color>
+    <color name="colorAccent">#4E87FF</color>
+    <color name="colorContrast">#cdb60a</color>
+    <color name="text_gray">#898B8E</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#0A0000</color>
+    <color name="fentblack">#E3DDDD</color>
+    <color name="blue">#4E87FF</color>
+    <color name="blue1">#F7F7F7</color>
+    <color name="ordercolor">#CBE3F6</color>
+
+    <color name="blue2">#FFFFFF</color>
+    <color name="red">#DB1D1D</color>
+    <color name="green">#C1F7B1</color>
+
+    <color name="red1">#FDA1A1</color>
+    <color name="grey1">#97B1FD</color>
+
+    <color name="persian_green_primary">#00A693</color>
+    <color name="persian_green_dark">#00655A</color>
+    <color name="persian_green_accent">#4CAF50</color>
+
+    <color name="primary">#7AA4D5</color>
+    <color name="primary_dark">#165E8B</color>
+    <color name="accent">#7AA4D5</color>
+
+    <color name="pink_primary">#EB1E63</color>
+    <color name="pink_dark">#C0175C</color>
+    <color name="pink_accent">#C0175C</color>
+    <color name="royal_blue_primary">#4C63E2</color>
+    <color name="royal_blue_dark">#4055BF</color>
+    <color name="royal_blue_accent">#4055BF</color>
+    <color name="purple_primary">#9C28B1</color>
+    <color name="purple_dark">#7A1FA2</color>
+    <color name="purple_accent">#7A1FA2</color>
+    <color name="orange_accent">#F3A62E</color>
+    <color name="indigo">#3E50AE</color>
+    <color name="pink">#FF427C</color>
+    <color name="grey">#C2C2C2</color>
+
+    <color name="cardBackgroundColor">#FF0000</color>
+    <color name="app_button_color">#2CA6CF</color>
+    <color name="light_white">#fcfcfc</color>
+</resources>

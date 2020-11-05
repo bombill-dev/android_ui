@@ -1,0 +1,167 @@
+{
+  "project_info": {
+    "project_number": "747971643527",
+    "firebase_url": "https://bombill-74f7f.firebaseio.com",
+    "project_id": "bombill-74f7f",
+    "storage_bucket": "bombill-74f7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747971643527:android:83d5124a6cd56aa07cd022",
+        "android_client_info": {
+          "package_name": "com.amol.bombill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747971643527-tv8qedbngcpbjl7mv19hqqio81s3o7oe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amol.bombill",
+            "certificate_hash": "6bb6ccbc9d829fa67661c2729c8ea9e68ec4fa2e"
+          }
+        },
+        {
+          "client_id": "747971643527-v54dvsau6f7da5i5b4k7gch0phh9dspm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amol.bombill",
+            "certificate_hash": "bc97a99d3fee2f99c023ae83dfc28ccd1c03c047"
+          }
+        },
+        {
+          "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpZGS76Ru6zYw2NhZ2lJ6NYRyyE1LsB9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747971643527:android:8b0a3f3fcb3f5e177cd022",
+        "android_client_info": {
+          "package_name": "com.amol.bombill_vendor_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747971643527-as1ughkshuafoa486h83h1jmu0ogvsr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amol.bombill_vendor_android",
+            "certificate_hash": "bc97a99d3fee2f99c023ae83dfc28ccd1c03c047"
+          }
+        },
+        {
+          "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpZGS76Ru6zYw2NhZ2lJ6NYRyyE1LsB9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747971643527:android:f1fef4e78149e97d7cd022",
+        "android_client_info": {
+          "package_name": "com.app.bombill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747971643527-2gt3lopitflciqj0h5dl93vdo7kgeotn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bombill",
+            "certificate_hash": "bc97a99d3fee2f99c023ae83dfc28ccd1c03c047"
+          }
+        },
+        {
+          "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpZGS76Ru6zYw2NhZ2lJ6NYRyyE1LsB9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747971643527:android:fda84db75389b7cb7cd022",
+        "android_client_info": {
+          "package_name": "com.example.bombill_dd_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747971643527-u4nb6rbmd90riqis5re0sn4rqucba7lq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bombill_dd_android",
+            "certificate_hash": "bc97a99d3fee2f99c023ae83dfc28ccd1c03c047"
+          }
+        },
+        {
+          "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpZGS76Ru6zYw2NhZ2lJ6NYRyyE1LsB9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747971643527-pdn0b7vegjtf0o0jj5hmmavci37t437l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

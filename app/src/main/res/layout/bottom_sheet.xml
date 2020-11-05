@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_shape_bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:orientation="vertical"
+
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="11dp"
+                android:text="Search Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Cuurent Location"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/demoshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/Search_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="22dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:gravity="center_vertical"
+                android:hint="Enter Address"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="195dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="11sp"
+                android:text="lat"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11sp"
+                android:layout_marginRight="11sp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="134dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address1"
+                            android:layout_width="335dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/btn_confirm_location"
+                            android:layout_width="323dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="11sp"
+                            android:background="@color/blue"
+                            android:text="Confirm Location"
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
