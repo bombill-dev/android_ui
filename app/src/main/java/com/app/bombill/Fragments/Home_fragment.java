@@ -161,7 +161,7 @@ BottomSheetDialog bottomSheetDialog;
         sliderLayout.setIndicatorAnimation(IndicatorAnimations.FILL);
 
         sliderLayout.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
-        sliderLayout.setScrollTimeInSec(1);
+        sliderLayout.setScrollTimeInSec(2);
         setSliderView();
 
 
@@ -339,7 +339,7 @@ BottomSheetDialog bottomSheetDialog;
 
     private void setSliderView() {
 
-        for (int i=0; i<2;i++){
+        for (int i=0; i<=2;i++){
 
             DefaultSliderView sliderView=new DefaultSliderView(getContext());
 
@@ -350,6 +350,9 @@ BottomSheetDialog bottomSheetDialog;
                     break;
                 case 1:
                     sliderView.setImageDrawable(R.drawable.btn_sustainable);
+                    break;
+                case 2:
+                    sliderView.setImageDrawable(R.drawable.bombill);
                     break;
             }
             sliderView.setImageScaleType(ImageView.ScaleType.CENTER_CROP);

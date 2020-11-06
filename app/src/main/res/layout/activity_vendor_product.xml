@@ -50,14 +50,14 @@
         app:cardCornerRadius="0dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
-        app:cardBackgroundColor="@color/blue"
+        app:cardBackgroundColor="@color/grey"
         app:cardElevation="0dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/appBarVendorName"
-            android:background="@color/white">
+            android:background="@color/grey">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -70,6 +70,7 @@
                     android:layout_marginLeft="11dp"
                     android:text="Restrorant name"
                     android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -108,6 +109,7 @@
                     android:layout_marginTop="7dp"
                     android:background="@drawable/doted_line" />
                 <ImageView
+                    android:visibility="gone"
                     android:id="@+id/ivProductType"
                     android:layout_width="@dimen/dimen_25dp"
                     android:layout_height="@dimen/dimen_25dp"
@@ -117,6 +119,7 @@
                     android:layout_marginLeft="@dimen/dimen_10dp"/>
 
                 <ImageView
+                    android:visibility="gone"
                     android:id="@+id/ivProductType1"
                     android:layout_width="@dimen/dimen_25dp"
                     android:layout_height="@dimen/dimen_25dp"
@@ -153,12 +156,29 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/nonveg"
+
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"/>
+
+            <ImageView
+
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/veg"
+
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"/>
 
             <RelativeLayout
                 android:id="@+id/relativeSeawaterFish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_10dp">
+                android:layout_marginTop="@dimen/dimen_35dp">
 
                 <TextView
                     android:layout_width="match_parent"

@@ -161,9 +161,39 @@
         android:id="@+id/lottie"
         android:layout_width="52dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginTop="11dp"
         app:lottie_autoPlay="true"
         app:lottie_fileName="cooking.json"
+        app:lottie_loop="true" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_marginTop="11dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="deliveryman.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie2"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_marginTop="11dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="cancel.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie3"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_marginTop="11dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="done.json"
         app:lottie_loop="true" />
         <TextView
             android:layout_marginTop="@dimen/dimen_28dp"

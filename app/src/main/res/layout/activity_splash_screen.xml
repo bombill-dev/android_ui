@@ -22,7 +22,7 @@
         android:id="@+id/lottie"
         android:layout_width="408dp"
         android:layout_height="291dp"
-        app:lottie_fileName="fish_l1.json"
+        app:lottie_fileName="fish_l2.json"
         app:lottie_loop="true"
         app:lottie_autoPlay="true"
         android:layout_marginTop="311dp"

@@ -64,7 +64,7 @@ public class HomePageVendorAdapter  extends RecyclerView.Adapter<HomePageVendorA
         holder.Vendor_Name.setText(developersList.getName());
         holder.Vendor_id.setText(developersList.getVendorId());
         holder.Delivery_distance.setText(developersList.getDeliverydistance());
-        holder.Min_amount.setText("Minimum Order ₹."+developersList.getMin_amount());
+        holder.Min_amount.setText("Minimum Order ₹"+developersList.getMin_amount());
 //        holder.Distance_from_user.setText(developersList.getDeliverydistancefromuser()+" km");
          time = developersList.getDeliverydistancefromuser();
         time = (time*60)/10+15;

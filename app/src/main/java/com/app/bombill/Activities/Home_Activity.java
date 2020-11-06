@@ -347,4 +347,24 @@ public class Home_Activity extends AppCompatActivity {
         editor.putString("customer_password", "");
         editor.commit();
     }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setTitle("Confirmation")
+                .setMessage("Are you sure, you want exit!..")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getBaseContext(), "Welcome Back", Toast.LENGTH_SHORT).show();
+                    }
+                }).show();
+
+    }
 }

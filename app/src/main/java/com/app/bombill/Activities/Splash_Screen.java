@@ -193,6 +193,7 @@ public class Splash_Screen extends AppCompatActivity {
                             {
                                 startActivity(new Intent(Splash_Screen.this, Location_Animation.class));
                                 overridePendingTransition(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+                                finish();
                                // Toast.makeText(Splash_Screen.this, "Getting your Location ", Toast.LENGTH_LONG).show();
                             }
                         }

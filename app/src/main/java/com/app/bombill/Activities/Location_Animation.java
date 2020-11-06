@@ -38,6 +38,7 @@ public class Location_Animation extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(Location_Animation.this,Home_Activity.class));
+                finish();
             }
         },2400);
     }

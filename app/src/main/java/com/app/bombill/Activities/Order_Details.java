@@ -21,6 +21,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
@@ -57,8 +58,10 @@ public class Order_Details extends AppCompatActivity {
     String Order_id, order_status, order_date, sub_total, grand_total, fileURL,URL,status;
     TextView Order_Id, Order_Status, Order_date, Total, Service_Charges, Delivery_Charges, Grand_Total,Status;
     Button btnInvoice;
+
+    LottieAnimationView lottieAnimationView,lottieAnimationView1,lottieAnimationView2,lottieAnimationView3;
   public   ProgressBar progressBar;
-    int a=50;
+
 
     @SuppressLint("ResourceAsColor")
     @Override
@@ -72,7 +75,10 @@ public class Order_Details extends AppCompatActivity {
 
         Status=findViewById(R.id.status1);
         progressBar=findViewById(R.id.progressBar);
-
+lottieAnimationView=findViewById(R.id.lottie);
+lottieAnimationView1=findViewById(R.id.lottie1);
+lottieAnimationView2=findViewById(R.id.lottie2);
+lottieAnimationView3=findViewById(R.id.lottie3);
 
 
         if (ContextCompat.checkSelfPermission(Order_Details.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -86,6 +92,7 @@ public class Order_Details extends AppCompatActivity {
         Order_id = intent.getStringExtra(OrderAdapter.KEY_ORDER_ID);
 
         URL="https://bombill.com/bombill_pages/customer_get_order_status.php?order_id="+Order_id;
+
         loadurl();
 
         order_status = intent.getStringExtra(OrderAdapter.KEY_ORDERSTATUS);
@@ -161,6 +168,7 @@ public class Order_Details extends AppCompatActivity {
 
                         if (status.equals("Completed")) {
                             progressBar.setProgress(100);
+                            lottieAnimationView3.setVisibility(View.VISIBLE);
 
                         }
 
@@ -171,6 +179,7 @@ public class Order_Details extends AppCompatActivity {
                         if (status.equals("Vendor Declined")){
                              progressBar.setProgress(100);
                             progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.red), PorterDuff.Mode.SRC_IN );
+                            lottieAnimationView2.setVisibility(View.VISIBLE);
                         }
 
                         if (status.equals("Ready For Pickup")) {
@@ -179,14 +188,18 @@ public class Order_Details extends AppCompatActivity {
 
                         if (status.equals("Vendor Accepted")) {
                             progressBar.setProgress(45);
+                            lottieAnimationView.setVisibility(View.VISIBLE);
                         }
 
                         if (status.equals("In Transit")) {
                             progressBar.setProgress(75);
+                            lottieAnimationView1.setVisibility(View.VISIBLE);
                         }
 
                         if (status.equals("Deliverd")) {
                             progressBar.setProgress(90);
+                            lottieAnimationView3.setVisibility(View.VISIBLE);
+
                         }
 
                        // SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();

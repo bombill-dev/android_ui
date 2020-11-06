@@ -124,13 +124,7 @@ public class Your_Order extends Fragment {
         loadUrlData();
 
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-            }
-        },2400);
 
 
         return view;
