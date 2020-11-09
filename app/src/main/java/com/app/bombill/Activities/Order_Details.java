@@ -168,11 +168,13 @@ lottieAnimationView3=findViewById(R.id.lottie3);
 
                         if (status.equals("Completed")) {
                             progressBar.setProgress(100);
+                            progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.blue), PorterDuff.Mode.SRC_IN );
                             lottieAnimationView3.setVisibility(View.VISIBLE);
 
                         }
 
                         if (status.equals("Order Placed")) {
+                            progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.blue), PorterDuff.Mode.SRC_IN );
                             progressBar.setProgress(15);
                         }
 
@@ -188,16 +190,22 @@ lottieAnimationView3=findViewById(R.id.lottie3);
 
                         if (status.equals("Vendor Accepted")) {
                             progressBar.setProgress(45);
+                            progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.blue), PorterDuff.Mode.SRC_IN );
+
                             lottieAnimationView.setVisibility(View.VISIBLE);
                         }
 
                         if (status.equals("In Transit")) {
                             progressBar.setProgress(75);
+                            progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.blue), PorterDuff.Mode.SRC_IN );
+
                             lottieAnimationView1.setVisibility(View.VISIBLE);
                         }
 
                         if (status.equals("Deliverd")) {
                             progressBar.setProgress(90);
+                            progressBar.getProgressDrawable().setColorFilter(ContextCompat.getColor(Order_Details.this, R.color.blue), PorterDuff.Mode.SRC_IN );
+
                             lottieAnimationView3.setVisibility(View.VISIBLE);
 
                         }

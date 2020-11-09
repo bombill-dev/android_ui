@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/appBarVendorName"
-            android:background="@color/grey">
+            android:background="@color/white">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                     android:layout_marginLeft="11dp"
                     android:text="Restrorant name"
                     android:textSize="@dimen/dimen_20dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView

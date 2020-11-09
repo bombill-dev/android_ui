@@ -108,7 +108,15 @@
                         android:layout_marginLeft="60dp"
                         android:text="Distance from you"
                         android:textStyle="bold" />-->
-
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_below="@+id/ratingBar"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/ic_delivery_bike"
+                        android:layout_marginEnd="71dp"
+                        android:text="Distance" />
 
                     <TextView
                         android:id="@+id/Distance_from_user"

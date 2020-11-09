@@ -3,7 +3,7 @@
     <!--Blue #0083CC Red #E04444 0A68CD df4344-->
     <color name="colorPrimary">#0083CC</color>
     <color name="colorPrimaryDark">#0752A3</color>
-    <color name="colorAccent">#4E87FF</color>
+    <color name="colorAccent">#E82727</color>
     <color name="colorContrast">#cdb60a</color>
     <color name="text_gray">#898B8E</color>
     <color name="text_white">#FFFFFF</color>

@@ -107,7 +107,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         public TextView vendor_order_id,Purchase_date,Payment_status,Payment_method,Transaction_id,
                 Order_status,Grand_total, Vendor_Name;
         Button Customer_Feedback;
-        CardView Order_card;
+        Button Order_card;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
