@@ -93,7 +93,7 @@ public class VendorProductAdapter extends RecyclerView.Adapter<VendorProductAdap
         /** Setting product image and its click event for product details screen **/
         Glide.with(context).load(vendorProductResponse.getUrl()).apply(options)
                 .into(holder.ivProductPhoto);
-        holder.ivProductPhoto.setOnClickListener(new View.OnClickListener() {
+      /*  holder.ivProductPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 VendorProductResponse e1 = vendorProductResponseList.get(position);
@@ -110,7 +110,7 @@ public class VendorProductAdapter extends RecyclerView.Adapter<VendorProductAdap
                 intent.putExtra("product_description", vendorProductResponse.getDescription());
                 view.getContext().startActivity(intent);
             }
-        });
+        });*/
 
         /** Check if product_id exists and show/hide ADD button accordingly */
         if (databaseHelper.findProductID(vendorProductResponse.getVendorProductId())) {
