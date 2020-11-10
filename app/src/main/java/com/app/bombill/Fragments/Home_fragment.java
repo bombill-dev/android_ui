@@ -352,7 +352,7 @@ BottomSheetDialog bottomSheetDialog;
                     sliderView.setImageDrawable(R.drawable.btn_sustainable);
                     break;
                 case 2:
-                    sliderView.setImageDrawable(R.drawable.bombill);
+                    sliderView.setImageDrawable(R.drawable.btn_nutrition);
                     break;
             }
             sliderView.setImageScaleType(ImageView.ScaleType.CENTER_CROP);
